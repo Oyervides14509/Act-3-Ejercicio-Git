@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Codigo necesario para acentos y responsividad -->
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+	<title>Universidad Tecnólogica Santa Catarina</title>
+		<!-- Cargara todo a un icono mas compacto, donde se mostraran las funciones al clicar o tocar -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<link rel=StyleSheet HREF="estilos.css" TYPE="text/css">
+<script type="text/javascript" src="js.js"></script>
+</head>
+<body>
+
+
+<div class="topnav" id="myTopnav">
+  <a><img src="utsc.png" width="150" height="100"></a>
+  <a href="#">Inicio</a>
+  <a href="#">Educación Incluyente</a>
+  <a href="#">Quiénes Somos</a>
+  <a href="#" class="active">Oferta Educativa</a>
+  <a href="#">Vida estudiantil</a>
+  <a href="#">UTSC Virtual</a>
+  <a href="#">Vinculación</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+  <!-- tabla lateral izquierda -->
+</div>
+<frameset cols="25%,75%">
+<h2>Carreras Profesionales</h2>
+<div class="tab">
+  <button class="tablinks" onmouseover="openCarr(event, 'LGIEC')">Licenciatura en Gestión Institucional Educativa y Curricular</button>
+  <button class="tablinks" onmouseover="openCarr(event, 'INM')">Innovación de Negocios y Mercadotecnias</button>
+  <button class="tablinks" onmouseover="openCarr(event, 'MI')">Mantenimiento Industrial</button>
+  <button class="tablinks" onmouseover="openCarr(event, 'SP')">Sistemas productivos</button>
+  <button class="tablinks" onmouseover="openCarr(event, 'Mec')">Mecatrónica</button>
+  <button class="tablinks" onmouseover="openCarr(event, 'DGS')">Desarrollo y Gestión de Software</button>
+  <p>
+  	
+  </p>
+</div>
+
+<div id="LGIEC" class="tabcontent">
+  <h3>Licenciatura en Gestión Institucional Educativa y Curricular</h3>
+  <img src="imagen1.jpg" width="800" height="300">
+  <p>En la actualidad, dominar el idioma inglés se ha convertido en un requisito indispensable en este mundo competitivo donde la tecnología hace posible la comunicación e intercambios comerciales y culturales alrededor del mundo.
+
+Por ello, es importante contar con profesionales en la enseñanza preparados para impartir el idioma en todos los niveles desde una etapa temprana. Esta carrera forma profesionistas con una sólida preparación académica, tecnológica y cultural, con conocimientos y competencias profesionales pertinentes para contribuir en el desarrollo de estrategias de enseñanza-aprendizaje del idioma inglés.</p>
+</div>
+
+<div id="INM" class="tabcontent">
+  <h3>Licenciatura en Innovación de Negocios y Mercadotecnia</h3>
+  <img src="imagen2.jpg" width="800" height="300">
+  <p>En un mundo global y cambiante como el nuestro, para poder crear una ventaja competitiva sostenible, se necesita eliminar la resistencia al cambio y salir del área de confort; aceptar el riesgo y adecuarse a las necesidades del cliente.
+
+Las compañías deben esforzarse por aceptar y buscar estos cambios y entender cómo la interacción de gente, creatividad y visión de negocios se conjuntan para producir resultados espectaculares. La carrera preparará a sus egresados a cumplir con este papel.</p>
+</div>
+
+<div id="MI" class="tabcontent">
+  <h3>Mantenimiento Industrial</h3>
+  <img src="imagen3.jpg" width="800" height="300">
+  <p>Con la globalización, las empresas deben que cumplir con estándares de calidad internacionales, lo que les permite ser más competitivas a nivel regional, nacional e internacional.
+
+Para cumplir con esto, es importante que las empresas tengan un adecuado plan de mantenimiento que les permita conservar sus herramientas, equipos e instalaciones en las mejores condiciones de funcionamiento posibles.
+
+Es por ello que se requiere personal altamente competente que planifique actividades de mantenimiento, prevención y detección de fallas, que garantice la operación óptima de los procesos de producción.</p>
+</div>
+
+<div id="SP" class="tabcontent">
+  <h3>Sistemas Productivos</h3>
+  <img src="imagen4.jpg" width="800" height="300">
+  <p>Los sistemas de producción han invadido otras áreas del conocimiento humano, tal como: medicina (fabricación de corazones de plástico), comunicaciones (satélites, microchips), etc.
+
+La carrera de Ingeniería en sistemas productivos provee de una amplia variedad de temas en las áreas fundamentales que ayudan a las empresas a lograr la competitividad requerida actualmente.</p>
+</div>
+
+<div id="Mec" class="tabcontent">
+  <h3>Mecatrónica</h3>
+  <img src="imagen5.jpg" width="800" height="300">
+  <p>En el marco de la globalización, la carrera de Mecatrónica trabaja en el desarrollo integral de los estudiantes hasta llevarlos a la superación personal. Forma en ellos competencias integrales fortaleciendo sus valores y actitudes, a fin de lograr su competitividad en el campo profesional
+
+Hacer el programa de estudios de calidad, que cumpla con las necesidades del cliente, que promueva programas de educación continua y a distancia, que cuente con cuerpos académicos consolidados y comprometidos con el desarrollo del sector educativo, industrial y socia</p>
+</div>
+
+<div id="DGS" class="tabcontent">
+  <h3>Ingeniería en Desarrollo y Gestión de Software</h3>
+  <img src="imagen6.jpg" width="800" height="300">
+  <p>El Ingeniero en Desarrollo y Gestión de Software cuenta con las competencias profesionales para desarrollar soluciones tecnológicas para entornos Web mediante fundamentos de programación orientada a objetos, base de datos y redes de área local; implementar soluciones multiplataforma, en la nube y software embebido mediante la adquisición y administración de datos y construir soluciones de software y sistemas inteligentes mediante la gestión de proyectos, integración de metodologías, modelos y herramientas de desarrollo bajo la normatividad aplicable para la optimización de proyectos de investigación, innovación, desarrollo tecnológico y de emprendimiento.</p>
+</div>
+</frameset>
+
+<script>
+
+</script>
+
+</body>
+</html>
